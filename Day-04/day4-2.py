@@ -2,9 +2,7 @@ def parse_input(filename):
 	with open(filename) as file:
 		print('hello!!!!')
 		string_input = file.read()
-		print(string_input)
 	list_input =  string_input.split('-')
-	print(list_input)
 	return list_input
 	
 def has_matching_adjacent_digits(password):
@@ -12,7 +10,6 @@ def has_matching_adjacent_digits(password):
 	length = len(password)
 	count = 1
 	list = []
-	print(password)
 	for i in range(0,len(password)-1):
 		if password[i] == password[i+1]:
 			count += 1
@@ -21,7 +18,6 @@ def has_matching_adjacent_digits(password):
 		else:
 			list.append(count)
 			count = 1
-	print(list)
 	if 2 in list:
 		return True
 	else:
