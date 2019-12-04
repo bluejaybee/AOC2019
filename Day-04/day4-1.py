@@ -1,6 +1,5 @@
 def parse_input(filename):
 	with open(filename) as file:
-		print('hello!!!!')
 		string_input = file.read()
 		print(string_input)
 	list_input =  string_input.split('-')
